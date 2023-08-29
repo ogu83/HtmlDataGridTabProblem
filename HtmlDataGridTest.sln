@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HtmlDataGridTest", "HtmlDataGridTest\HtmlDataGridTest.csproj", "{2415C725-C527-41F1-B4E6-99B13E898564}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HtmlDataGridTest.Browser", "HtmlDataGridTest.Browser\HtmlDataGridTest.Browser.csproj", "{A8BAC073-75BB-45F8-BCA7-C62A6F751D3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HtmlDataGridTest.Simulator", "HtmlDataGridTest.Simulator\HtmlDataGridTest.Simulator.csproj", "{E99D19A2-7605-4D69-BD1F-839A13405CAE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{77242811-3901-4C9D-8157-DC390C403E84}"
+	ProjectSection(SolutionItems) = preProject
+		Nuget.Config = Nuget.Config
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PrivatePackages", "PrivatePackages", "{AC05AD20-AEE8-4F1B-8F09-2D7F2A647695}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2415C725-C527-41F1-B4E6-99B13E898564}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2415C725-C527-41F1-B4E6-99B13E898564}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2415C725-C527-41F1-B4E6-99B13E898564}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2415C725-C527-41F1-B4E6-99B13E898564}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8BAC073-75BB-45F8-BCA7-C62A6F751D3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8BAC073-75BB-45F8-BCA7-C62A6F751D3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8BAC073-75BB-45F8-BCA7-C62A6F751D3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8BAC073-75BB-45F8-BCA7-C62A6F751D3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E99D19A2-7605-4D69-BD1F-839A13405CAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E99D19A2-7605-4D69-BD1F-839A13405CAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E99D19A2-7605-4D69-BD1F-839A13405CAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E99D19A2-7605-4D69-BD1F-839A13405CAE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2E8D3E2C-FADC-452D-8343-A0F8BACBD38B}
+	EndGlobalSection
+EndGlobal
