@@ -9,26 +9,13 @@ using System.Windows.Data;
 
 namespace HtmlDataGridTest
 {
-    /// <summary>
-    /// Klass för att uttöka samlingar
-    /// </summary>
-    public static class CollectionExtensions
-    {
-        // Extend ObservableCollection<T> Class
-        public static void AddRange<T>(this ICollection<T> collection, IEnumerable<T> items)
-        {
-            foreach (var item in items)
-            {
-                collection.Add(item);
-            }
-        }
-    }
-
     public partial class MainPage : Page
     {
         public MainPage()
         {
             InitializeComponent();
+
+            Loaded += MainPage_Loaded;
 
             var itemSource = new List<string>() { "hello", "bye" };
             var htmlColumns = new List<HtmlDataGridTemplateColumn>();
@@ -74,7 +61,11 @@ namespace HtmlDataGridTest
             htmlDataGrid1.Columns.AddRange(htmlColumns);
             htmlDataGrid1.Rows.AddRange(htmlRows);
             htmlDataGrid1.ItemsSource = itemSource;
+        }
 
+        private async void MainPage_Loaded(object sender, RoutedEventArgs e)
+        {
+            await OpenSilver.Interop.LoadJavaScriptFile($"ms-appx:///HtmlDataGridTest/Scripts/jquery-3.6.3.min.js");
         }
     }
 }

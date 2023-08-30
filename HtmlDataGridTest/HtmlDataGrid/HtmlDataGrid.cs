@@ -411,9 +411,27 @@ window.htmlDataGridHelpers = {
     },
     handleTab: function (id) {
         const el = document.getElementById(id);
+        let tabSwitch = false;
         el?.addEventListener('keydown', (event) => {
-            if (event.code == 'Tab')
-                event.stopPropagation();
+            var elem = event.srcElement;
+            elem = $(elem);
+            if (elem && elem.hasClass('custom-table')) {
+                console.log('tabSwitch:', tabSwitch);
+                if (!tabSwitch)
+                    event.stopPropagation();
+                tabSwitch = false;
+            }
+            else {
+                var isLastElem = $(elem).parent().parent().hasClass('LastElement') || $(elem).parent().hasClass('LastElement');
+                console.log('isLastElem:', isLastElem);
+                if (!isLastElem) {
+                    event.stopPropagation();
+                } 
+                else {
+                    el.focus();
+                    tabSwitch = true;
+                }
+            }
         });
     },
     getSize: function (id) {

@@ -21,9 +21,18 @@
 
   <ItemGroup>
     <Compile Include="App.xaml.cs" />
+    <Compile Include="CollectionExtensions.cs" />
     <Compile Include="HtmlDataGrid\HtmlControls.cs" />
     <Compile Include="HtmlDataGrid\HtmlDataGrid.cs" />
     <Compile Include="MainPage.xaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Scripts\jquery-3.6.3.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   
 </Project>
